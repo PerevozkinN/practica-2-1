@@ -1,0 +1,72 @@
+1)
+#include <iostream>
+
+using namespace std;
+
+float a, b, c;
+char d;
+int p;
+int main()
+{
+
+    while (p != 2)
+    {
+        cout << "1 = Начать \n 2 - Закончить \n";
+        cin >> p;
+        switch (p)
+        {
+        case 1:
+        {
+            cout << "Первое число >> ";
+            cin >> a;
+            cout << "Математический знак >> ";
+            cin >> d;
+            cout << "Второе число >> ";
+            cin >> b;
+            if (d == '+')
+            {
+                c = a + b;
+                cout << a << " + " << b << " = " << c << endl;
+            }
+            if (d == '-')
+            {
+                c = a - b;
+                cout << a << " - " << b << " = " << c << endl;
+            }
+            if (d == '*')
+            {
+                c = a * b;
+                cout << a << " * " << b << " = " << c << endl;
+            }
+            if (d == '/')
+            {
+                c = a / b;
+                cout << a << " / " << b << " = " << c << endl;
+                try
+                {
+                    if (b == 0)
+                        throw 0;
+                }
+                catch (int q)
+                {
+                    cout << " Ошибка деления на " << q << "!"  << endl;
+                }
+            }
+        }
+        case 2:
+        {
+            break;
+        }
+        }
+        cout << "Результат = " << c << endl;
+    }
+}
+2)
+#include <iostream>
+ 
+int main()
+{
+    int n; std::cin >> n;
+    for (int i = n; i > 0; i --)
+        std::cout << i << " ";
+}
