@@ -1,3 +1,14 @@
+2)
+#include <iostream>
+ 
+int main()
+{
+    int n; std::cin >> n;
+    for (int i = n; i > 0; i --)
+        std::cout << i << " ";
+}
+
+
 1)
 #include <iostream>
 
@@ -61,12 +72,4 @@ int main()
         cout << "Результат = " << c << endl;
     }
 }
-2)
-#include <iostream>
- 
-int main()
-{
-    int n; std::cin >> n;
-    for (int i = n; i > 0; i --)
-        std::cout << i << " ";
-}
+
